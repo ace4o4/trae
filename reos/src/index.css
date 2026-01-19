@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-scan: scan 2s linear infinite;
+  --animate-scan-fast: scan 1s linear infinite;
+
+  @keyframes scan {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(100%); }
+  }
+}

@@ -79,6 +79,15 @@ function AlertLog({ alerts, onResolve }) {
                     </div>
                   </div>
                 )}
+
+                {alert.evidenceImage && (
+                  <div className="mt-2 overflow-hidden rounded-md border border-red-500/50 bg-red-950/30">
+                     <div className="px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-red-400 bg-red-900/50 border-b border-red-500/30">
+                        Visual Evidence
+                     </div>
+                     <img src={alert.evidenceImage} alt="Alert Evidence" className="w-full h-auto object-cover opacity-90" />
+                  </div>
+                )}
               </div>
             </div>
             <button
